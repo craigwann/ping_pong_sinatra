@@ -22,3 +22,9 @@ describe('#ping_pong') do
   expect(ping_pong(3)).to(eq([1,2,"ping"]))
   end
 end
+
+describe('#ping_pong') do
+  it ("if input number is divisible by 5 returns pong") do
+  expect(ping_pong(5)).to(eq([1,2,"ping",4,"pong"]))
+  end
+end
