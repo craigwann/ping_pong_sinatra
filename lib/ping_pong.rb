@@ -22,6 +22,8 @@ def ping_pong(number)
     x = x + 1
     if (x % 3 == 0)
       input_array.push("ping")
+    elsif (x % 5 == 0)
+      input_array.push("pong")
     else
       input_array.push(x)
     end
