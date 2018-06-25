@@ -20,7 +20,9 @@ def ping_pong(number)
   x = 0
   while(x < number)
     x = x + 1
-    if (x % 3 == 0)
+    if (x % 15 == 0)
+      input_array.push("pingpong")
+    elsif (x % 3 == 0)
       input_array.push("ping")
     elsif (x % 5 == 0)
       input_array.push("pong")
