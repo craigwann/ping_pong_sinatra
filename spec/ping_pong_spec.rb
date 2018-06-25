@@ -10,3 +10,9 @@ require('ping_pong')
 #     expect(ping_pong("the color purple")).to(eq("The Color Purple"))
 #   end
 # end
+
+describe('#ping_pong') do
+  it ("input number returns integers from 1 to input number") do
+  expect(ping_pong(2)).to(eq([1,2]))
+  end
+end

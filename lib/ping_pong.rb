@@ -8,23 +8,33 @@
 #
 # eric_test = [1,2,3,4,5]
 #
-# def ping_pong (title)
 #   split_sentence = title.split
 #   split_sentence.each do |word|
 #     word.capitalize!()
 #   end
 #   split_sentence.join(" ")
-# end
 
-number = gets.to_i
+def ping_pong(number)
 
-puts number
+  input_array = []
+  x = 0
+  while(x < number)
+    x = x + 1
+    input_array.push(x)
+  end
 
-input_array = []
-x = 0
-while(x < number)
-  x = x + 1
-  input_array.push(x)
+  input_array
 end
-
-puts input_array
+#
+# number = gets.to_i
+#
+# puts number
+#
+# input_array = []
+# x = 0
+# while(x < number)
+#   x = x + 1
+#   input_array.push(x)
+# end
+#
+# puts input_array
