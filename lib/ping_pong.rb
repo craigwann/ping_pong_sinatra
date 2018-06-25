@@ -20,7 +20,11 @@ def ping_pong(number)
   x = 0
   while(x < number)
     x = x + 1
-    input_array.push(x)
+    if (x % 3 == 0)
+      input_array.push("ping")
+    else
+      input_array.push(x)
+    end
   end
 
   input_array
