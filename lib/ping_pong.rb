@@ -1,9 +1,12 @@
-
-def ping_pong(number)
+class PingPong
+  def initialize(number)
+    @number = number
+  end
+  def ping_pong
 
   input_array = []
   x = 0
-  while(x < number)
+  while(x < @number)
     x = x + 1
     if (x % 15 == 0)
       input_array.push("pingpong")
